@@ -16,6 +16,14 @@ curl http://nonnoise.github.io/Edison/_sources/Edison/base-feeds.conf -o /etc/op
 curl http://nonnoise.github.io/Edison/_sources/Edison/intel-iotdk.conf -o /etc/opkg/intel-iotdk.conf
 curl http://nonnoise.github.io/Edison/_sources/Edison/mraa-upm.conf -o /etc/opkg/mraa-upm.conf
 
+opkg update
+opkg upgrade
+
+# Nano Install (make sure same dir...)
+```
+wget http://www.nano-editor.org/dist/v2.2/nano-2.2.6.tar.gz && tar xvf nano-2.2.6.tar.gz && cd nano-2.2.6 && ./ configure && make && make install
+```
+
 #Alternate Flashing Method
 * Install Homebrew by running the command
 ```
