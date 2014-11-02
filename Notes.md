@@ -1,4 +1,4 @@
-IntelEdison
+Intel Edison
 ===========
 
 # Access serial console @ J3
