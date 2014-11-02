@@ -1,11 +1,20 @@
 Intel Edison
 ===========
 
+# Version check
+```
+cat /etc/version
+```
+
 # Access serial console @ J3
 ``` 
 screen /dev/tty.usbserial-A402IWCC 115200 -L
 ```
 
+# Update after distro-install
+curl http://nonnoise.github.io/Edison/_sources/Edison/base-feeds.conf -o /etc/opkg/base-feeds.conf
+curl http://nonnoise.github.io/Edison/_sources/Edison/intel-iotdk.conf -o /etc/opkg/intel-iotdk.conf
+curl http://nonnoise.github.io/Edison/_sources/Edison/mraa-upm.conf -o /etc/opkg/mraa-upm.conf
 
 #Alternate Flashing Method
 * Install Homebrew by running the command
